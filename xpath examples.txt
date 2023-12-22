@@ -1,0 +1,4 @@
+/div[contains(@class, 'pagination')`; // and contains(.//span, 'someText')]   /parent::a`;
+/div[@class='pagination']`; // CONTAIN::`//div[contains(@class, 'pagination')]`;
+/div[@class='pagination']
+/div[@class='pagination']/div[@class="wrapper"]/a

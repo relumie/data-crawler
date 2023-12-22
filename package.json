@@ -1,0 +1,21 @@
+{
+  "name": "crawler",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawler"
+  ],
+  "author": "relumie",
+  "license": "ISC",
+  "dependencies": {
+    "crawlee": "^3.5.8",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^21.4.0"
+  }
+}
