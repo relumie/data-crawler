@@ -1,8 +1,8 @@
 
-import path from 'path';
-import fs from 'fs';
+const path = require('path')
+const fs = require('fs')
 
-export {
+module.exports = {
   mouseCursorHover,
   localDummyHtmlTest,
 	getInnerTextFromXpathElement,
@@ -24,8 +24,11 @@ async function mouseCursorHover (page) {
 
 /** 로컬 파일을 읽을 때 사용 */
 async function localDummyHtmlTest (page) {
-	const __dirname = new URL('.', import.meta.url).pathname
-	const full_path = path.join(__dirname, '../crawlers/dummy.html').substring(1)
+	/// for es module style
+	// const __dirname = new URL('.', import.meta.url).pathnameimport path from 'path';
+	// const __dirname = path.resolve();
+	// const full_path = path.join(__dirname, '../crawlers/dummy.html').substring(1)
+	const full_path = path.join(__dirname, '../crawlers/dummy.html')
 	var content_html = fs.readFileSync(full_path, 'utf8')
 	await page.setContent(content_html)
 }

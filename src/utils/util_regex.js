@@ -1,4 +1,4 @@
-export {
+module.exports = {
 	hasKoreanCharacters,
   convertUnicodeToText,
 }

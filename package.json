@@ -2,7 +2,7 @@
   "name": "crawler",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -15,7 +15,11 @@
   "license": "ISC",
   "dependencies": {
     "crawlee": "^3.5.8",
-    "node-fetch": "^3.3.2",
-    "puppeteer": "^21.4.0"
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^21.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
   }
 }

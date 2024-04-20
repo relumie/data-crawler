@@ -15,10 +15,10 @@
 
 
 // --- musinsa.com --- //
-import execute from './src/crawlers/execute.js';
+const execute = require('./src/crawlers/execute.js')
 try {
-	console.log(new Date());
-	execute();
+	console.log(new Date())
+	execute()
 } catch (e) {
-  console.log(new Date());
+  console.log(new Date())
 }

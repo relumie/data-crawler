@@ -1,10 +1,11 @@
-export {
+module.exports = {
   makeDateString,
 }
 
+
 function makeDateString (datetime, options) {
   options = {
-    year: 'yy',
+    year: 'yyyy',
     month: 'mm',
     date: 'dd',
     hour: '',
@@ -13,8 +14,12 @@ function makeDateString (datetime, options) {
   }
 
   let output = '';
-  if (options['year'] === 'yy')
+  
+  if (options['year'] === 'yyyy')
+    output += datetime.getFullYear()
+  else if (options['year'] === 'yy')
     output += datetime.getFullYear().toString().slice(2, 4)
+
   if (options['month'] === 'mm')
     output += '-' + (datetime.getMonth() + 1).toString().padStart(2, '0')
   if (options['date'] === 'dd')
